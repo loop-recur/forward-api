@@ -3,3 +3,4 @@
 %uri=https://github.com/loop-recur/forward-api
 
 v1schema 2014-10-06T04:00:12Z Joe Nelson <joe@looprecur.com> # Schema for v1 routes
+speakers [v1schema] 2014-10-06T04:10:51Z Joe Nelson <joe@looprecur.com> # Speakers table
