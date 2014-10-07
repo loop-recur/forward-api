@@ -5,11 +5,11 @@ BEGIN;
 
 CREATE TABLE "1".speakers
 (
-  id serial, 
-  name character varying NOT NULL, 
-  twitter character varying, 
-  avatar_url character varying NOT NULL, 
-  bio text, 
+  id serial,
+  name character varying NOT NULL,
+  twitter character varying,
+  avatar_url character varying NOT NULL,
+  bio text,
   featured boolean NOT NULL DEFAULT FALSE
 )
 WITH (
