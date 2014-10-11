@@ -5,9 +5,13 @@
 
 BEGIN;
 
-CREATE ROLE forward_anonymous INHERIT;
 
-GRANT USAGE ON SCHEMA "1" TO forward_anonymous;
-GRANT SELECT, REFERENCES ON SCHEMA information_schema to forward_anonymous;
+CREATE ROLE anonymous INHERIT;
+
+GRANT USAGE ON SCHEMA "1" TO anonymous;
+
+GRANT SELECT, REFERENCES ON ALL TABLES IN SCHEMA "1" TO anonymous;
+
+GRANT anonymous TO auth;
 
 COMMIT;
